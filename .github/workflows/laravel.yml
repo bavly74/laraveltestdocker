@@ -25,7 +25,10 @@ jobs:
           
       - name: Install Composer Dependencies
         run: composer install --prefer-dist --no-interaction
-      
+        
+      - name: Debug vendor bin
+        run: ls -la vendor/bin
+        
       - name: Run Pint
         run: vendor/bin/pint --test
 

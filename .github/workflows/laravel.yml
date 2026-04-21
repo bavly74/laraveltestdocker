@@ -20,6 +20,9 @@ jobs:
         with:
           php-version: 8.0
 
+      - name: Allow Pest Plugin
+        run: composer config --no-plugins allow-plugins.pestphp/pest-plugin true
+          
       - name: Install Composer Dependencies
         run: composer install --no-progress
 

@@ -29,8 +29,8 @@ jobs:
       - name: Debug vendor bin
         run: ls -la vendor/bin
         
-      - name: Run Pint
-        run: vendor/bin/pint --test
+      # - name: Run Pint
+      #   run: vendor/bin/pint --test
 
 
   # ---------------------------

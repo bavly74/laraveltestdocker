@@ -96,6 +96,3 @@ jobs:
           DB_USERNAME: root
           DB_PASSWORD: root
         run: php artisan test
-
-
-  

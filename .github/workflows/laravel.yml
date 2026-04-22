@@ -98,15 +98,15 @@
 #         run: php artisan test
 
 
-name: Laravel CI/CD
+name: test ci
 
 on:
   push:
     branches: [ "master" ]
-
-jobs:
-  example-job:
+jobs: 
+  test:
     runs-on: ubuntu-latest
     steps:
-      - name : print hello world
-        run: echo "Hello, World!"
+      - uses: actions/checkout@v4
+      - name: Run a composer
+        run: composer --version

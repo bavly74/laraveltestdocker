@@ -111,7 +111,7 @@
 #       - name: Run a composer
 #         run: composer --version
 
-name: Laravel CI/CD
+name: Laravel CI
 on:
   workflow_dispatch:
 jobs:

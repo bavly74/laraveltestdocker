@@ -98,13 +98,24 @@
 #         run: php artisan test
 
 
-name: test ci
+# name: test ci
 
+# on:
+#   push:
+#     branches: [ "master" ]
+# jobs: 
+#   test:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v4
+#       - name: Run a composer
+#         run: composer --version
+
+name: Laravel CI/CD
 on:
-  push:
-    branches: [ "master" ]
-jobs: 
-  test:
+  workflow_dispatch:
+jobs:
+  test-job:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

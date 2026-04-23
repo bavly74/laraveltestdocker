@@ -16,4 +16,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: choosen env
-        run: echo "ypur env is ${{inputs.env}}"
+        run: echo "your env is ${{inputs.env}}"

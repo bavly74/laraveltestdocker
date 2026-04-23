@@ -1,0 +1,9 @@
+on:
+  workflow_dispatch:
+jobs:
+  test-manual:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run a composer
+        run: composer --version

@@ -15,5 +15,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Run a composer
-        run: composer --version
+      - name: choosen env
+        run: echo "ypur env is ${{inputs.env}}"
